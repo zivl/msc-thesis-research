@@ -4,6 +4,9 @@
   "description": "MSc thesis of Ziv Levy — Android permission-based malware classification — as an explorable static site (Astro + Starlight).",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

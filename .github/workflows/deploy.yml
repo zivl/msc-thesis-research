@@ -27,6 +27,8 @@ jobs:
         uses: withastro/action@v3
         with:
           package-manager: yarn
+          # Astro 6 / @astrojs/mdx require Node >= 22.12 (CI default is 20)
+          node-version: "22"
 
   deploy:
     needs: build
