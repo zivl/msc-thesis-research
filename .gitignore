@@ -1,0 +1,20 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# python tooling for chart regeneration
+.chartvenv/
+
+# intermediate extraction artifacts (regenerated from the .docx via pandoc/scripts)
+_pandoc_media/
+_charts/
+_charts_out/
+_emf_test/
+_full.md
+
+# os / editor
+.DS_Store
+*.log

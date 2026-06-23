@@ -1,0 +1,44 @@
+/* ===========================================================================
+   THEME: DARK
+   Dark background, high contrast, easy on the eyes for long reading.
+   Forces the dark colour scheme regardless of the light/dark toggle.
+   =========================================================================== */
+
+:root,
+:root[data-theme="light"],
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --sl-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --sl-color-bg: #0f1419;
+  --sl-color-bg-nav: #11161d;
+  --sl-color-bg-sidebar: #11161d;
+  --sl-color-bg-inline-code: #21262d;
+
+  --sl-color-text: #e6edf3;
+  --sl-color-text-accent: #7cc4ff;
+
+  --sl-color-accent-low: #10304f;
+  --sl-color-accent: #2f81f7;
+  --sl-color-accent-high: #cae3ff;
+
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #e6edf3;
+  --sl-color-gray-2: #c9d1d9;
+  --sl-color-gray-3: #b1bac4;
+  --sl-color-gray-4: #8b949e;
+  --sl-color-gray-5: #6e7681;
+  --sl-color-gray-6: #30363d;
+  --sl-color-gray-7: #21262d;
+  --sl-color-black: #0f1419;
+
+  --sl-color-hairline: #21262d;
+  --sl-color-hairline-shade: #30363d;
+}
+
+/* Slightly larger, looser text reduces fatigue on dark backgrounds */
+.sl-markdown-content {
+  line-height: 1.85;
+  font-size: 1.02rem;
+}

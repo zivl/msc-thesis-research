@@ -1,0 +1,41 @@
+/* ===========================================================================
+   Shared styling — ALWAYS loaded, independent of the active theme.
+   Handles figures, captions, tables and images consistently across all themes.
+   =========================================================================== */
+
+/* KaTeX stylesheet for rendered LaTeX math (resolved from node_modules). */
+@import "katex/dist/katex.min.css";
+
+.sl-markdown-content figure {
+  margin: 1.75rem auto;
+  text-align: center;
+}
+
+.sl-markdown-content figure img {
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 6px;
+  background: #ffffff; /* keep chart/figure backgrounds legible under dark themes */
+}
+
+.sl-markdown-content figcaption {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* Tables: slightly denser, scrollable on small screens */
+.sl-markdown-content table {
+  font-size: 0.92rem;
+}
+
+/* The title page logo should not get the figure border treatment */
+.sl-markdown-content figure.logo img {
+  border: none;
+  background: transparent;
+}

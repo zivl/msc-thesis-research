@@ -1,0 +1,42 @@
+/* ===========================================================================
+   THEME: MODERN
+   Sans-serif (Inter), subtle navy accent, generous whitespace.
+   =========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --sl-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* More breathing room for long-form reading */
+  --sl-content-width: 50rem;
+}
+
+:root[data-theme="light"] {
+  --sl-color-accent-low: #dbe6f5;
+  --sl-color-accent: #1e3a8a;
+  --sl-color-accent-high: #15235c;
+  --sl-color-text-accent: #1e3a8a;
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: #ffffff;
+  --sl-color-bg-sidebar: #f7f9fc;
+  --sl-color-hairline: #e6ebf2;
+}
+
+:root[data-theme="dark"] {
+  --sl-color-accent-low: #15235c;
+  --sl-color-accent: #5b8def;
+  --sl-color-accent-high: #dbe6f5;
+  --sl-color-text-accent: #9bb8ef;
+}
+
+/* Airy spacing + comfortable measure */
+.sl-markdown-content {
+  line-height: 1.8;
+}
+.sl-markdown-content :is(h2, h3) {
+  margin-top: 2.5rem;
+  letter-spacing: -0.01em;
+}
+.sl-markdown-content p {
+  margin-block: 1.1rem;
+}

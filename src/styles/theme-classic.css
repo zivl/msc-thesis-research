@@ -1,0 +1,36 @@
+/* ===========================================================================
+   THEME: CLASSIC  (default)
+   Clean academic white, serif body font (Georgia), minimal colour.
+   =========================================================================== */
+
+:root {
+  --sl-font: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Light palette — the primary look for this theme */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #dfe4ea;
+  --sl-color-accent: #3b5168;
+  --sl-color-accent-high: #1f2d3d;
+  --sl-color-text-accent: #2a3f57;
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: #ffffff;
+  --sl-color-bg-sidebar: #fafafa;
+  --sl-color-hairline: #e5e7eb;
+}
+
+/* Understated dark variant (kept minimal to match the classic look) */
+:root[data-theme="dark"] {
+  --sl-color-accent-low: #1f2d3d;
+  --sl-color-accent: #6b8cae;
+  --sl-color-accent-high: #dfe4ea;
+  --sl-color-text-accent: #9db3c9;
+}
+
+/* Comfortable academic reading rhythm */
+.sl-markdown-content {
+  line-height: 1.75;
+}
+.sl-markdown-content :is(h1, h2, h3) {
+  font-weight: 700;
+}
